@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutterhackathon/utils/logger_util.dart';
+import 'package:flutterhackathon/utils/image_util.dart';
 
 void main() {
   runApp(const MyApp());
@@ -84,6 +85,11 @@ class _MyHomePageState extends State<MyHomePage> {
             ElevatedButton(
               onPressed: () => {Log.d("ElevatedButton onPressed")},
               child: Text("click me"),
+            ),
+            // Image.asset(ImageUtil.wrapAssets("home.png")),
+            Image.asset(
+              ImageUtil.wrapAssets("home.png"),
+              width: 50,
             ),
           ],
         ),

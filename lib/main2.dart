@@ -44,6 +44,8 @@ class MyHomePage extends StatefulWidget {
 
   final String title;
 
+  void test() {}
+
   @override
   State<MyHomePage> createState() => _MyHomePageState();
 }
@@ -61,19 +63,27 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.title),
-      ),
       body: Center(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.start,
           children: <Widget>[
             const Text(
-              'You have pushed the button this many times:',
+              'hello world.',
+              textAlign: TextAlign.start,
+              style: TextStyle(
+                color: Color.fromARGB(255, 0, 208, 255),
+                fontSize: 32.0,
+              ),
             ),
             Text(
               '$_counter',
-              style: Theme.of(context).textTheme.headlineMedium,
+            ),
+            TextButton(
+                onPressed: () => {Log.d("TextButton onPressed")},
+                child: Text("click me")),
+            ElevatedButton(
+              onPressed: () => {Log.d("ElevatedButton onPressed")},
+              child: Text("click me"),
             ),
           ],
         ),

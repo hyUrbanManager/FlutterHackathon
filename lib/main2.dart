@@ -91,6 +91,18 @@ class _MyHomePageState extends State<MyHomePage> {
               ImageUtil.wrapAssets("home.png"),
               width: 50,
             ),
+            Image(
+              image: NetworkImage(
+                  "https://pub.flutter-io.cn/static/hash-emcmnf54/img/pub-dev-logo-2x.png"),
+              width: 100.0,
+            ),
+            TextField(
+
+            ),
+            LinearProgressIndicator(
+              value: .5,
+
+            ),
           ],
         ),
       ),

@@ -96,13 +96,21 @@ class _MyHomePageState extends State<MyHomePage> {
                   "https://pub.flutter-io.cn/static/hash-emcmnf54/img/pub-dev-logo-2x.png"),
               width: 100.0,
             ),
-            TextField(
-
-            ),
+            TextField(),
             LinearProgressIndicator(
               value: .5,
-
             ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: [
+                Padding(
+                    padding: EdgeInsets.all(5),
+                    child: Text('text1')),
+                Text('text2'),
+                Text('text3'),
+              ],
+            ),
+            Text('text4'),
           ],
         ),
       ),

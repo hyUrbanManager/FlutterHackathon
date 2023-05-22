@@ -38,6 +38,7 @@ dependencies:
   logger: ^1.3.0
   video_player: ^2.6.1
   autocomplete_textfield: ^2.0.1
+  flutter_social_textfield: ^0.1.2
 
 dev_dependencies:
   flutter_test:

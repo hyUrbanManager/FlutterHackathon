@@ -39,6 +39,8 @@ dependencies:
   video_player: ^2.6.1
   autocomplete_textfield: ^2.0.1
   flutter_social_textfield: ^0.1.2
+  system_alert_window: ^1.2.1
+  share_plus: ^7.0.1
 
 dev_dependencies:
   flutter_test:

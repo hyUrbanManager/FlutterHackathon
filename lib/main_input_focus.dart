@@ -57,17 +57,18 @@ class TipRoute extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("tip"),
+        title: const Text("tip"),
       ),
       body: Padding(
-        padding: EdgeInsets.all(18),
+        padding: const EdgeInsets.all(18),
         child: Center(
           child: Column(
             children: <Widget>[
-              Text("back"),
+              TextField(),
+              const Text("back"),
               ElevatedButton(
                 onPressed: () => Navigator.pop(context),
-                child: Text("back"),
+                child: const Text("back"),
               )
             ],
           ),

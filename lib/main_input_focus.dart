@@ -1,9 +1,11 @@
 import 'package:autocomplete_textfield/autocomplete_textfield.dart';
 import 'package:flutter/material.dart';
 
-void main() => runApp(MyApp());
+void main() => runApp(const MyApp());
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -30,9 +32,9 @@ class _FirstPageState extends State<FirstPage> {
       appBar: AppBar(
         // Here we take the value from the MyHomePage object that was created by
         // the App.build method, and use it to set our appbar title.
-        title: Text("TextField focus"),
+        title: const Text("TextField focus"),
       ),
-      body: Center(
+      body: const Center(
         child: TextField(),
       ),
       floatingActionButton: FloatingActionButton(
@@ -64,7 +66,6 @@ class TipRoute extends StatelessWidget {
         child: Center(
           child: Column(
             children: <Widget>[
-              TextField(),
               const Text("back"),
               ElevatedButton(
                 onPressed: () => Navigator.pop(context),

@@ -20,3 +20,7 @@ samples, guidance on mobile development, and a full API reference.
 ```shell
 flutter build windows -t lib/main_input_focus.dart
 ```
+
+
+# text input focus issue
+1. https://github.com/flutter/flutter/issues/36057

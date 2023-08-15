@@ -1,5 +1,6 @@
 import 'package:autocomplete_textfield/autocomplete_textfield.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 void main() => runApp(const MyApp());
 
@@ -39,6 +40,11 @@ class _FirstPageState extends State<FirstPage> {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
+          // MethodChannel channel = SystemChannels.textInput;
+          // channel.invokeMethod("TextInput.show");
+          // channel.invokeMethod("TextInput.show2");
+
+
           Navigator.push(
             context,
             MaterialPageRoute(builder: (context) {
@@ -66,6 +72,15 @@ class TipRoute extends StatelessWidget {
         child: Center(
           child: Column(
             children: <Widget>[
+              ElevatedButton(
+                onPressed: () {},
+                child: SizedBox(),
+                autofocus: true,
+                style: ElevatedButton.styleFrom(
+                    primary: Colors.transparent,
+                    shadowColor: Colors.transparent,
+                    surfaceTintColor: Colors.transparent),
+              ),
               const Text("back"),
               ElevatedButton(
                 onPressed: () => Navigator.pop(context),

@@ -41,6 +41,7 @@ dependencies:
   flutter_social_textfield: ^0.1.2
   system_alert_window: ^1.2.1
   share_plus: ^7.0.1
+  dart_console: ^1.2.0
 
 dev_dependencies:
   flutter_test:

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_keyboard_visibility/flutter_keyboard_visibility.dart';
+import 'package:flutterhackathon/windows_osk.dart';
 
 void main() {
   runApp(App());
@@ -36,6 +37,8 @@ class Demo extends StatelessWidget {
                     //   context,
                     //   MaterialPageRoute(builder: (context) => ProviderDemo()),
                     // );
+
+                    WindowsOSK.show();
                   },
                   child: Text('Provider Demo'),
                 ),
@@ -46,22 +49,24 @@ class Demo extends StatelessWidget {
                     //   MaterialPageRoute(
                     //       builder: (context) => KeyboardDismissDemo()),
                     // );
+
+                    WindowsOSK.close();
                   },
                   child: Text('KeyboardDismiss Demo'),
                 ),
                 Spacer(),
-                TextField(
-                  keyboardType: TextInputType.text,
-                  decoration: InputDecoration(
-                    labelText: 'Input box for keyboard test',
-                  ),
-                ),
-                Container(height: 60.0),
-                KeyboardVisibilityBuilder(builder: (context, visible) {
-                  return Text(
-                    'The keyboard is: ${visible ? 'VISIBLE' : 'NOT VISIBLE'}',
-                  );
-                }),
+                // TextField(
+                //   keyboardType: TextInputType.text,
+                //   decoration: InputDecoration(
+                //     labelText: 'Input box for keyboard test',
+                //   ),
+                // ),
+                // Container(height: 60.0),
+                // KeyboardVisibilityBuilder(builder: (context, visible) {
+                //   return Text(
+                //     'The keyboard is: ${visible ? 'VISIBLE' : 'NOT VISIBLE'}',
+                //   );
+                // }),
                 Spacer(),
               ],
             ),

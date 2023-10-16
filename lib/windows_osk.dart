@@ -52,18 +52,19 @@ class WindowsOSK {
     final tipBand = _getTipBandPtr();
     if (tipBand > 0) {
       final closed = _postMessageA(tipBand, 513, 1, 65537);
-      print(closed);
+      print("show closed: $closed");
 
       final opened = _postMessageA(tipBand, 514, 1, 65537);
-      print(opened);
+      print("show opened: $opened");
     }
   }
 
   static void close() {
     final tipMainWnd = _findWindowW('IPTip_Main_Window', null);
+    print("close tipMainWnd : $tipMainWnd");
     if (tipMainWnd > 0) {
       final res = SendMessage(tipMainWnd, 0x0112, 0xF060, 0);
-      print(res);
+      print("close res: $res");
     }
   }
 }

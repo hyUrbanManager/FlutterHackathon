@@ -42,6 +42,8 @@ dependencies:
   system_alert_window: ^1.2.1
   share_plus: ^7.0.1
   dart_console: ^1.2.0
+  input_with_keyboard_control: ^1.0.8
+  flutter_keyboard_visibility: ^5.4.1
 
 dev_dependencies:
   flutter_test:

@@ -272,6 +272,14 @@ packages:
       url: "https://pub.flutter-io.cn"
     source: hosted
     version: "1.0.4"
+  multicast_dns:
+    dependency: "direct main"
+    description:
+      name: multicast_dns
+      sha256: "73fcb8e0003326d06576c773f49dcbc4156019d66f85fbf0eee8225166baefa8"
+      url: "https://pub.flutter-io.cn"
+    source: hosted
+    version: "0.3.2+5"
   path:
     dependency: transitive
     description:

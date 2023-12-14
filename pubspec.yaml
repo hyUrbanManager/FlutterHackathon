@@ -45,7 +45,16 @@ dependencies:
   input_with_keyboard_control: ^1.0.8
   flutter_keyboard_visibility: ^5.4.1
   multicast_dns: ^0.3.2+5
+
+  #
   permission_handler: ^11.1.0
+#  permission_handler:
+#    path: D:\project\Github\flutter-permission-handler\permission_handler
+#  permission_handler_windows:
+#    path: D:\project\Github\flutter-permission-handler\permission_handler_windows
+
+
+
 
 dev_dependencies:
   flutter_test:
